@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Shalomt - Linktree profile",
+  "name": "A clone of the Linktree profile",
   "icons": [
     {
       "src": "favicon.ico",

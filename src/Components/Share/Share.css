@@ -1,0 +1,94 @@
+.share {
+	border: 1.66667px dashed #98a2b3;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	cursor: pointer;
+	transition: 0.2s;
+    color: #667085;
+}
+.share:hover {
+	background-color: #f9fafb;
+	transition: 0.2s;
+}
+.share:focus {
+	background-color: #fff;
+	box-shadow: 0px 0px 0px 4px #f2f4f7;
+	transition: 0.2s;
+}
+.share ion-icon {
+	font-size: 24px;
+	margin-bottom: 0;
+}
+.share:disabled{
+    background-color: #F9FAFB;
+    border: #EAECF0 1px dashed;
+    color: #EAECF0;
+}
+
+.tooltip {
+	display: inline-block;
+	position: relative;
+	border-bottom: 1px dotted #666;
+	text-align: left;
+}
+
+.tooltip .left {
+	width: 95px;
+    height: 34px;
+	top: 50%;
+	right: 100%;
+	margin-right: 20px;
+	transform: translate(0, -50%);
+	padding: 8px 12px;
+	color: #ffffff;
+	background-color: #101828;
+	font-weight: normal;
+	font-size: 13px;
+	border-radius: 8px;
+	position: absolute;
+	z-index: 99999999;
+	box-sizing: border-box;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	display: none;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 18px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+.left p{
+    margin: 0 !important;
+}
+.tooltip:hover .left {
+	display: block;
+}
+
+.tooltip .left i {
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	margin-top: -12px;
+	width: 32px;
+	height: 24px;
+	overflow: hidden;
+}
+
+.tooltip .left i::after {
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	left: 0;
+	top: 50%;
+	transform: translate(-50%, -50%) rotate(-45deg);
+	background-color: #101828;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}

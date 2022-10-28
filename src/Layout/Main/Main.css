@@ -1,0 +1,15 @@
+.social-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 72px;
+	padding: 24px 0;
+	cursor: pointer;
+}
+.social-links a {
+	padding: 0 5px;
+}
+.social-links a img {
+	width: 24px;
+	height: 24px;
+}
