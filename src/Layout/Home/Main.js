@@ -25,7 +25,7 @@ const Main = () => {
 				<Links />
 			</div>
 			<div className="social-links">
-				<a className="slack">
+				<a className="slack" href="/">
 					{/* meisieshalom */}
 					<img
 						src={slack}

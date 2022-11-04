@@ -1,8 +1,9 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Error from "./Components/Error/404";
-import Main from "./Layout/Main/Main";
+import Main from "./Layout/Home/Main";
 import Footer from "./Layout/Footer/Footer";
+import Contact from "./Layout/Contact/Contact";
 
 const App = () => {
 	return (
@@ -15,6 +16,10 @@ const App = () => {
 				<Route
 					path="*"
 					element={<Error />}
+				/>
+				<Route
+					path="/contact"
+					element={<Contact /> }
 				/>
 			</Routes>
 			<Footer />

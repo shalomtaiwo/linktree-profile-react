@@ -1,0 +1,99 @@
+.form {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding-left: 2px;
+}
+form {
+	width: 700px;
+}
+.row-two-input {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.input-style {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.row-two-input input {
+	width: 88%;
+}
+.row-one-input {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+.row-one-input input {
+	width: 94%;
+}
+.row-button {
+	display: flex;
+	width: 100%;
+	align-items: center;
+}
+.label {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	color: #344054;
+	margin: 5px 0 5px 2px;
+}
+p {
+	margin: 0;
+}
+.hidden-error {
+	color: #f83f23;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	visibility: visible;
+	margin-top: 4px !important;
+	margin-left: 2px;
+	transition: 0.5s;
+}
+
+.user:focus:invalid {
+	border: 1px solid #f89687;
+	outline: none;
+	transition: 0.5s;
+	box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #ffd3cc;
+}
+.notfocused:focus:invalid {
+	border: 1px solid #f89687;
+	outline: none;
+	transition: 0.5s;
+	box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #ffd3cc;
+}
+
+.notfocused:not(:focus):invalid {
+	border: 1px solid #f89687;
+	outline: none;
+	transition: 0.5s;
+}
+
+.none {
+	visibility: hidden;
+	transition: 0.5s;
+}
+
+.isChecked {
+	margin-left: 35px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #475467;
+	cursor: pointer;
+}
+
+.row-checkbox {
+	margin: 15px 0;
+}
