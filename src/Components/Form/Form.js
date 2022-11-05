@@ -15,7 +15,6 @@ const Form = ({ isFocused, setIsFocused, setSendMessage }) => {
 	const [isEmail, setIsEmail] = useState(true);
 	const [isSubscribed, setIsSubscribed] = useState(false);
 
-
 	const onSubmit = (e) => {
 		e.preventDefault();
 		if (
@@ -76,10 +75,13 @@ const Form = ({ isFocused, setIsFocused, setSendMessage }) => {
 								validCheck={validCheck}
 								toggleCss={toggleCss}
 								isEmail={!isEmail}
+								id="first_name"
 							/>
 							<p
 								className={
-									(!firstName.match("[A-Za-z_-]{1,32}")) & toggleCss ? "hidden-error" : "none"
+									!firstName.match("[A-Za-z_-]{1,32}") & toggleCss
+										? "hidden-error"
+										: "none"
 								}
 							>
 								Invalid First name
@@ -96,10 +98,13 @@ const Form = ({ isFocused, setIsFocused, setSendMessage }) => {
 								validCheck={validCheck}
 								toggleCss={toggleCss}
 								isEmail={!isEmail}
+								id="last_name"
 							/>
 							<p
 								className={
-									(!lastName.match("[A-Za-z_-]{1,32}")) & toggleCss ? "hidden-error" : "none"
+									!lastName.match("[A-Za-z_-]{1,32}") & toggleCss
+										? "hidden-error"
+										: "none"
 								}
 							>
 								Invalid Last name
@@ -118,6 +123,7 @@ const Form = ({ isFocused, setIsFocused, setSendMessage }) => {
 								validCheck={validCheck}
 								toggleCss={toggleCss}
 								isEmail={isEmail}
+								id="email"
 							/>
 							<p
 								className={
@@ -140,6 +146,7 @@ const Form = ({ isFocused, setIsFocused, setSendMessage }) => {
 								onChange={(e) => setMessage(e.target.value)}
 								validCheck={validCheck}
 								toggleCss={toggleCss}
+								id="message"
 								placeholder="Send me a message and I'll reply you as soon as possible..."
 							/>
 							<p
@@ -161,7 +168,8 @@ const Form = ({ isFocused, setIsFocused, setSendMessage }) => {
 						className="isChecked"
 						onClick={addFocus}
 					>
-						You agree to providing your data to Shalom Taiwo who may contact you.
+						You agree to providing your data to Shalom Taiwo who may contact
+						you.
 					</p>
 					<p
 						className={
@@ -174,6 +182,7 @@ const Form = ({ isFocused, setIsFocused, setSendMessage }) => {
 				<div className="submit-button">
 					<div className="row-button">
 						<Button
+							id="btn__submit"
 							type="submit"
 							text="Send Message"
 						/>

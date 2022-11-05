@@ -1,7 +1,7 @@
 import React from "react";
 import "./Textarea.css";
 
-const Textarea = ({ placeholder, onChange, toggleCss, validCheck }) => {
+const Textarea = ({ id, placeholder, onChange, toggleCss, validCheck }) => {
 	return (
 		<textarea
 			rows={6}
@@ -9,6 +9,7 @@ const Textarea = ({ placeholder, onChange, toggleCss, validCheck }) => {
 			placeholder={placeholder}
 			required
 			onChange={onChange}
+			id={id}
 		></textarea>
 	);
 };
