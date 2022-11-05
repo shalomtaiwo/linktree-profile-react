@@ -128,7 +128,7 @@ const Form = ({ isFocused, setIsFocused, setSendMessage }) => {
 							/>
 							<p
 								className={
-									!email.match("[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$") &
+									!email.match("[A-Za-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$") &
 									toggleCss
 										? "hidden-error"
 										: "none"
