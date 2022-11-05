@@ -14,6 +14,7 @@ const Form = ({ isFocused, setIsFocused, setSendMessage }) => {
 	const [toggleCss, setToggleCss] = useState(false);
 	const [isEmail, setIsEmail] = useState(true);
 	const [isSubscribed, setIsSubscribed] = useState(false);
+	const [isDisabled, setIsDisabled] = useState(true);
 
 	const onSubmit = (e) => {
 		e.preventDefault();
@@ -52,8 +53,10 @@ const Form = ({ isFocused, setIsFocused, setSendMessage }) => {
 	const handlePolicy = (event) => {
 		if (event.target.checked) {
 			console.log("Policy is accepted");
+			setIsDisabled(false);
 		} else {
 			console.log("Policy is not yet accepted");
+			setIsDisabled(true);
 		}
 		setIsSubscribed((current) => !current);
 	};
@@ -186,6 +189,7 @@ const Form = ({ isFocused, setIsFocused, setSendMessage }) => {
 							id="btn__submit"
 							type="submit"
 							text="Send Message"
+							isDisabled={isDisabled}
 						/>
 					</div>
 				</div>
