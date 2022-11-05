@@ -24,4 +24,7 @@ footer {
 		height: fit-content;
 		padding: 30px 0;
 	}
+	.c-footer{
+		padding: 5px 0;
+	}
 }

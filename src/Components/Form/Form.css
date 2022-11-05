@@ -8,6 +8,7 @@
 }
 form {
 	width: 700px;
+	transition: 0.5s;
 }
 .row-two-input {
 	display: flex;
@@ -97,3 +98,4 @@ p {
 .row-checkbox {
 	margin: 15px 0;
 }
+

@@ -1,0 +1,20 @@
+.successModal{
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background-color: white;
+	overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.successModal p{
+    padding: 20px 0;
+}
+.successModal a{
+    text-decoration: none;
+}
+.successModal Button{
+    width: 280px;
+}

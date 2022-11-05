@@ -5,7 +5,7 @@ import Textarea from "./Textarea/Textarea";
 import "./Form.css";
 import Checkbox from "./Checkbox/Checkbox";
 
-const Form = ({ isFocused, setIsFocused }) => {
+const Form = ({ isFocused, setIsFocused, setSendMessage }) => {
 	const [firstName, setFirstName] = useState("");
 	const [lastName, setLastName] = useState("");
 	const [email, setEmail] = useState("");
@@ -14,6 +14,7 @@ const Form = ({ isFocused, setIsFocused }) => {
 	const [toggleCss, setToggleCss] = useState(false);
 	const [isEmail, setIsEmail] = useState(true);
 	const [isSubscribed, setIsSubscribed] = useState(false);
+
 
 	const onSubmit = (e) => {
 		e.preventDefault();
@@ -24,9 +25,7 @@ const Form = ({ isFocused, setIsFocused }) => {
 			(message !== "") &
 			(isSubscribed !== false)
 		) {
-			console.log(
-				`${firstName} ${lastName}, my email is ${email} and my message is ${message}`
-			);
+			setSendMessage(true);
 		} else {
 			setValidCheck("notfocused");
 			setToggleCss(true);
@@ -162,7 +161,7 @@ const Form = ({ isFocused, setIsFocused }) => {
 						className="isChecked"
 						onClick={addFocus}
 					>
-						You agree to providing your data to Shalom who may contact you.
+						You agree to providing your data to Shalom Taiwo who may contact you.
 					</p>
 					<p
 						className={

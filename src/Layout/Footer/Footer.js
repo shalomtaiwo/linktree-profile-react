@@ -6,14 +6,14 @@ import "./Footer.css";
 const Footer = () => {
 	return (
 		<footer>
-			<div className="zuri-logo">
+			<div className="zuri-logo c-footer">
 				<img
 					src={zuri}
 					alt="zuri logo"
 				/>
 			</div>
-			<p>HNG Internship 9 Frontend Task</p>
-			<div className="ifg">
+			<p className="c-footer">HNG Internship 9 Frontend Task</p>
+			<div className="ifg c-footer">
 				<img
 					src={ifg}
 					alt="Ingrassive for food"

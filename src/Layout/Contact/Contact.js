@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Form from "../../Components/Form/Form";
 import "./Contact.css";
 
-const Contact = () => {
+const Contact = ({setSendMessage}) => {
 	const [isFocused, setIsFocused] = useState(true);
 
 	const removeFocus = () => {
@@ -24,6 +24,7 @@ const Contact = () => {
 			</div>
 			<div className="contact-form">
 				<Form
+        setSendMessage={setSendMessage}
 					isFocused={isFocused}
 					setIsFocused={setIsFocused}
 				/>
