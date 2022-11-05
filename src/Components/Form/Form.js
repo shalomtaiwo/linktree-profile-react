@@ -63,6 +63,7 @@ const Form = ({ isFocused, setIsFocused, setSendMessage }) => {
 			<form
 				onSubmit={onSubmit}
 				noValidate
+				autoComplete="nope"
 			>
 				<div className="row-two-input space">
 					<div className="input-col input-style">
